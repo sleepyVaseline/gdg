@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Retro 70s — warm cream, burnt orange, mustard, avocado olive */
+:root {
+  --background: #f7edd8;
+  --foreground: #2c1810;
+  --accent: #d35400;
+  --accent-2: #6b7c3e;
+  --accent-3: #c9a227;
+  --muted: #7d6b56;
+  --card: #fffaf0;
+  --border: #d9c4a0;
+}
+
+.dark {
+  --background: #1c140e;
+  --foreground: #f5e6c8;
+  --accent: #f4a261;
+  --accent-2: #8fa64b;
+  --accent-3: #e9c46a;
+  --muted: #b8a088;
+  --card: #2a2118;
+  --border: #4d3d2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Warm vintage paper + soft grid */
+.bg-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E"),
+    linear-gradient(to right, rgba(211, 84, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(107, 124, 62, 0.06) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 0%, rgba(201, 162, 39, 0.12), transparent 55%);
+  background-size: auto, 56px 56px, 56px 56px, 100% 60%;
+}
+
+.dark .bg-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E"),
+    linear-gradient(to right, rgba(244, 162, 97, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(143, 166, 75, 0.05) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 0%, rgba(233, 196, 106, 0.08), transparent 50%);
+}
+
+/* Psychedelic sun glow — orange, gold, olive */
+.glow-blob {
+  background:
+    radial-gradient(
+      circle at 25% 35%,
+      color-mix(in srgb, var(--accent) 40%, transparent),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 55%,
+      color-mix(in srgb, var(--accent-2) 30%, transparent),
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      color-mix(in srgb, var(--accent-3) 25%, transparent),
+      transparent 65%
+    );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    120deg,
+    var(--accent) 0%,
+    var(--accent-3) 40%,
+    var(--accent-2) 75%,
+    var(--accent) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar — caramel thumb */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+  opacity: 0.7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-3);
+}
