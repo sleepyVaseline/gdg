@@ -42,9 +42,10 @@ export function About() {
             className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl border border-border"
           >
             <Image
-              src="/avatar.jpg"
+              src="/avatar.svg"
               alt={siteConfig.name}
               fill
+              unoptimized
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 400px"
               priority

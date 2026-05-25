@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Kavya Rathanraj",
   initials: "KR",
   role: "Full Stack Developer",
-  tagline: "Full Stack Developer · React · Node.js · Bengaluru, India",
+  tagline: "Full Stack Developer · TypeScript · Hackathons · AI & computer vision",
   email: "kavya.rathanraj@gmail.com",
   location: "Bengaluru, India",
   bio: `I'm a developer based in Bengaluru, building full stack projects between hackathons and college life. I like shipping useful tools — from society event coordination to AI experiments — and I'm especially interested in clean UI, fast prototypes, and learning by doing in India's buzzing tech scene.`,

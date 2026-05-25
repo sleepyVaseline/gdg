@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1810"/>
+      <stop offset="100%" stop-color="#4d3d2e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="100%" stop-color="#f7edd8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="120" cy="80" r="60" fill="#d35400" opacity="0.25"/>
+  <circle cx="700" cy="380" r="90" fill="#6b7c3e" opacity="0.2"/>
+  <circle cx="650" cy="60" r="40" fill="#e9c46a" opacity="0.35"/>
+  <!-- Calendar -->
+  <rect x="180" y="70" width="280" height="300" rx="16" fill="url(#card)" stroke="#d9c4a0" stroke-width="3"/>
+  <rect x="180" y="70" width="280" height="56" rx="16" fill="#d35400"/>
+  <rect x="180" y="110" width="280" height="16" fill="#d35400"/>
+  <text x="320" y="108" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#fffaf0">MARCH</text>
+  <text x="220" y="175" font-family="system-ui,sans-serif" font-size="18" fill="#7d6b56">12</text>
+  <text x="280" y="175" font-family="system-ui,sans-serif" font-size="18" fill="#7d6b56">13</text>
+  <text x="340" y="175" font-family="system-ui,sans-serif" font-size="18" fill="#7d6b56">14</text>
+  <rect x="248" y="195" width="44" height="44" rx="8" fill="#d35400" opacity="0.85"/>
+  <text x="320" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#2c1810">Poetry Night</text>
+  <text x="320" y="278" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#7d6b56">Cubbon Park · 6 PM</text>
+  <!-- Ticket -->
+  <rect x="500" y="120" width="220" height="130" rx="12" fill="#e9c46a" stroke="#c9a227" stroke-width="2"/>
+  <circle cx="500" cy="185" r="14" fill="#2c1810"/>
+  <circle cx="720" cy="185" r="14" fill="#2c1810"/>
+  <text x="610" y="175" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#1c140e">EVENT</text>
+  <text x="610" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#2c1810">Bengaluru</text>
+  <text x="610" y="228" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#4d3d2e">Registrations open</text>
+  <!-- Title -->
+  <text x="400" y="410" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#f5e6c8">EventFlow</text>
+</svg>
