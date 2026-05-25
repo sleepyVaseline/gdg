@@ -83,7 +83,7 @@ interface SkillIconProps {
 export function SkillIcon({ name, icon }: SkillIconProps) {
   return (
     <motion.div
-      className="group relative flex flex-col items-center justify-center rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent/50 hover:bg-accent/5"
+      className="group flex flex-col items-center justify-center gap-3 rounded-xl border border-border bg-card px-4 py-5 transition-colors hover:border-accent/50 hover:bg-accent/5 sm:py-6"
       variants={{
         hidden: { opacity: 0, scale: 0.8 },
         visible: { opacity: 1, scale: 1 },
@@ -97,7 +97,7 @@ export function SkillIcon({ name, icon }: SkillIconProps) {
           </span>
         )}
       </div>
-      <span className="pointer-events-none absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-card px-2 py-1 text-xs font-medium opacity-0 shadow-lg ring-1 ring-border transition-opacity group-hover:opacity-100">
+      <span className="text-center text-xs font-medium leading-tight text-muted transition-colors group-hover:text-accent">
         {name}
       </span>
     </motion.div>
